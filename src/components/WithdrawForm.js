@@ -1,11 +1,7 @@
-import { useState } from 'react';
-import QRCode from 'qrcode.react';
-import { useWeb3 } from '../contexts/Web3Context';
-
+// TEMPORARY VERSION - REMOVE ALERT LATER!
 export default function WithdrawForm() {
   const [amount, setAmount] = useState('');
   const [twoFACode, setTwoFACode] = useState('');
-  const { withdraw } = useWeb3();
 
   return (
     <div className="withdraw-form">
@@ -21,7 +17,7 @@ export default function WithdrawForm() {
         value={twoFACode}
         onChange={(e) => setTwoFACode(e.target.value)}
       />
-      <button onClick={() => withdraw(amount, twoFACode)}>
+      <button onClick={() => alert('Withdrawal simulation: Success!')}>
         Confirm Withdrawal
       </button>
     </div>
