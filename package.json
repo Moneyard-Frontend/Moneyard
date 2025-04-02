@@ -1,16 +1,18 @@
 {
-     "name": "moneyard",
-     "version": "1.0.0",
-     "scripts": {
-       "dev": "next dev",
-       "build": "next build && next export",
-       "start": "next start"
-     },
-     "dependencies": {
-       "next": "^13.4.19",
-       "react": "^18.2.0",
-       "react-dom": "^18.2.0",
-       "web3": "^1.10.0",
-       "qrcode.react": "^3.1.0"
-     }
+  "name": "moneyard",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@web3-react/core": "^8.2.3",
+    "next": "^13.4.19",
+    "qrcode.react": "^3.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.2",
+    "web3": "^1.10.0"
+  }
 }
