@@ -1,3 +1,4 @@
+// TEMPORARY VERSION - REPLACE WITH ENV VARS LATER!
 export default function DepositForm() {
   const networks = {
     TRC20: 'TJREgZTuTnvRrw5Fme4DDd6hSwCEwxQV3f',
@@ -15,6 +16,9 @@ export default function DepositForm() {
       <div className="address-box">
         {networks[selectedNetwork]}
       </div>
+      <button onClick={() => alert('Deposit functionality disabled in test mode')}>
+        Copy Address
+      </button>
     </div>
   );
 }
